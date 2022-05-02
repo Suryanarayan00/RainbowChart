@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View, StyleSheet, Dimensions, TouchableWithoutFeedback } from "react-native";
+import { Text, View, StyleSheet, Dimensions,TouchableWithoutFeedback } from "react-native";
 import Svg, { Path } from "react-native-svg";
 import Animated, {
   useAnimatedProps,
