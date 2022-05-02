@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View, StyleSheet, Dimensions } from "react-native";
+import { Text, View, StyleSheet, Dimensions, TouchableWithoutFeedback } from "react-native";
 import Svg, { Path } from "react-native-svg";
 import Animated, {
   useAnimatedProps,
@@ -7,7 +7,6 @@ import Animated, {
   useSharedValue,
   withTiming,
 } from "react-native-reanimated";
-import { TouchableWithoutFeedback } from "react-native-gesture-handler";
 import { mixPath, useVector } from "react-native-redash";
 
 import {  graphs, SIZE } from "./utils/Model";

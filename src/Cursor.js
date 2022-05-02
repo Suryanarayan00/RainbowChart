@@ -1,6 +1,6 @@
 import React from "react";
 import { View, StyleSheet } from "react-native";
-import { PanGestureHandler } from "react-native-gesture-handler";
+import { PanGestureHandler, GestureHandlerRootView } from "react-native-gesture-handler";
 import Animated, {
   useAnimatedGestureHandler,
   useSharedValue,
@@ -60,7 +60,7 @@ const Cursor = ({ index, translation }) => {
   });
 
   return (
-    <View style={StyleSheet.absoluteFill}>
+    <GestureHandlerRootView  style={StyleSheet.absoluteFill}>
       <PanGestureHandler {...{ onGestureEvent }}>
         <Animated.View style={StyleSheet.absoluteFill}>
           <Animated.View style={[styles.cursor, style]}>
@@ -68,7 +68,7 @@ const Cursor = ({ index, translation }) => {
           </Animated.View>
         </Animated.View>
       </PanGestureHandler>
-    </View>
+    </GestureHandlerRootView >
   );
 };
 
